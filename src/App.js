@@ -4,6 +4,7 @@ import Questions from "./pages/Questions";
 import FinalScreen from "./pages/FinalScreen";
 import { Container, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import './App.css'
 
 function App() {
   return (

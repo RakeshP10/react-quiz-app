@@ -73,14 +73,14 @@ const Questions = () => {
   };
 
   return (
-    <Box>
-      <Typography variant="h4">Questions {questionIndex + 1}</Typography>
-      <Typography mt={5}>
+    <div className="Quiz">
+      <h1>Questions {questionIndex + 1}</h1>
+      <Typography mt={2} mb={2}>
         {decode(response.results[questionIndex].question)}
       </Typography>
       {options.map((data, id) => (
         <Box mt={2} key={id}>
-          <Button onClick={handleClickAnswer} variant="contained">
+          <Button onClick={handleClickAnswer} variant="contained" >
             {decode(data)}
           </Button>
         </Box>
@@ -88,7 +88,7 @@ const Questions = () => {
       <Box mt={5}>
         Score: {score} / {response.results.length}
       </Box>
-    </Box>
+    </div>
   );
 };
 

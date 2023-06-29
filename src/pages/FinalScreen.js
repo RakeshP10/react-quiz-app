@@ -17,14 +17,14 @@ const FinalScreen = () => {
   };
 
   return (
-    <Box mt={30}>
+    <div className="EndScreen">
       <Typography variant="h3" fontWeight="bold" mb={3}>
         Final Score {score}
       </Typography>
       <Button onClick={handleBackToSettings} variant="outlined">
-        back to settings!
+        Restart Quiz
       </Button>
-    </Box>
+    </div>
   );
 };
 
